@@ -1,0 +1,23 @@
+models:
+  - model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+  - model: /users/philip/axolotl_persist/phi3_01_02/merged
+    parameters:
+      density: 0.5
+      weight: 0.25
+  - model: /users/philip/axolotl_persist/phi3_02_02/merged
+    parameters:
+      density: 0.5
+      weight: 0.25
+  - model: /users/philip/axolotl_persist/phi3_03_02/merged
+    parameters:
+      density: 0.5
+      weight: 0.25
+  - model: /users/philip/axolotl_persist/phi3_04_01/merged
+    parameters:
+      density: 0.5
+      weight: 0.25
+merge_method: ties
+base_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+parameters:
+  normalize: true
+dtype: bfloat16
