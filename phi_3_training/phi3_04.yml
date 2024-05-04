@@ -1,0 +1,68 @@
+# base model config
+base_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+model_type: AutoModelForCausalLM
+tokenizer_type: AutoTokenizer
+
+# qlora config
+load_in_8bit: false
+load_in_4bit: true
+strict: false
+adapter: qlora
+lora_model_dir:
+lora_r: 32
+lora_alpha: 64
+lora_dropout: 0.05
+lora_target_linear: true
+lora_fan_in_fan_out:
+
+# dataset config
+datasets:
+  - path: teknium/OpenHermes-2.5
+    split: train
+    type: sharegpt
+    conversation: chatml
+
+# saving
+dataset_prepared_path: ./persist/dataset_prepared_path
+output_dir: ./persist/phi3_04_01
+saves_per_epoch: 20
+save_total_limit: 2
+auto_resume_from_checkpoints: true
+save_safetensors: true
+
+# training hyperparameters
+sequence_len: 2048
+sample_packing: true
+pad_to_sequence_len: true
+gradient_accumulation_steps: 2
+
+micro_batch_size: 2
+
+num_epochs: 1
+optimizer: adamw_bnb_8bit
+weight_decay: 0.0
+learning_rate: 0.0001
+lr_scheduler: cosine
+train_on_inputs: false
+group_by_length: false
+bf16: false
+fp16: false
+tf32: false
+gradient_checkpointing: true
+gradient_checkpointing_kwargs:
+  use_reentrant: true
+flash_attention: false
+warmup_steps: 500
+max_grad_norm: 1.0
+sdp_attention: true
+
+# evaluation & logging
+evals_per_epoch: 30
+eval_sample_packing: false
+val_set_size: 0.002
+early_stopping_patience:
+logging_steps: 1
+
+# wabdb config
+wandb_project: tiny
+wandb_name: phi3_04_01
