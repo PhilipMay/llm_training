@@ -13,6 +13,16 @@ While merging of Llama based models worked well. That is the reason why we use
 [vonjack/Phi-3-mini-4k-instruct-LLaMAfied](https://huggingface.co/vonjack/Phi-3-mini-4k-instruct-LLaMAfied)
 as our base model.
 
+[vonjack/Phi-3-mini-4k-instruct-LLaMAfied](https://huggingface.co/vonjack/Phi-3-mini-4k-instruct-LLaMAfied) is the
+[microsoft/Phi-3-mini-4k-instruct](https://huggingface.co/microsoft/Phi-3-mini-4k-instruct) model,
+but converted into the Llama architecture.
+
+To check that nothing was broken during the conversion, we compared the quality of the two models based on open LLM leaderboard.
+The results are stored [here](https://github.com/telekom/llm_evaluation_results?tab=readme-ov-file#open-llm-leaderboard-evaluation).
+
+Although the results are not identical, we consider them equivalent.
+Especially because the model will be trained via further increments.
+
 ## Licensing
 
 Copyright (c) 2023-2024 [Philip May](https://philipmay.org)
