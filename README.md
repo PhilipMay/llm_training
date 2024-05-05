@@ -50,7 +50,7 @@ In this experiment we follow a 5 step approach:
 | -------- | ------- | ------- |
 | [PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-UltraChat](https://huggingface.co/PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-UltraChat)  | [PhilipMay/UltraChat-200k-ShareGPT-clean](https://huggingface.co/datasets/PhilipMay/UltraChat-200k-ShareGPT-clean) | [phi3_01.yml](https://github.com/PhilipMay/llm_training/blob/main/phi_3_training/phi3_01.yml) |
 | [PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-SlimOrca](https://huggingface.co/PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-SlimOrca) | [Open-Orca/SlimOrca-Dedup](https://huggingface.co/datasets/Open-Orca/SlimOrca-Dedup) | [phi3_02.yml](https://github.com/PhilipMay/llm_training/blob/main/phi_3_training/phi3_02.yml) |
-| []() | []() | []() |
+| [PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-Nectar](https://huggingface.co/PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-Nectar) | [PhilipMay/Nectar-ShareGPT-clean](https://huggingface.co/datasets/PhilipMay/Nectar-ShareGPT-clean) | [phi3_03.yml](https://github.com/PhilipMay/llm_training/blob/main/phi_3_training/phi3_03.yml) |
 | []() | []() | []() |
 
 #### Merging the 4 Phi-3 Models
