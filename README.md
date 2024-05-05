@@ -32,7 +32,11 @@ In this experiment we merge the raw
 [vonjack/Phi-3-mini-4k-instruct-LLaMAfied](https://huggingface.co/vonjack/Phi-3-mini-4k-instruct-LLaMAfied)
 model into a MoE model.
 
-TODO
+For MoE merging we use the
+[01_merge_mix.yml](https://github.com/PhilipMay/llm_training/blob/main/phi_3_training/01_merge_mix.yml)
+configuration with the [mergekit-moe](https://github.com/arcee-ai/mergekit/blob/main/docs/moe.md)
+command and the `--clone-tensors` option (see
+[details](https://github.com/arcee-ai/mergekit/blob/main/docs/moe.md#what-does-the-your-model-has-duplicated-tensors-but-the---clone-tensors-flag-is-not-set-warning-mean)).
 
 ### Individual Merging and MoE Training
 
