@@ -38,6 +38,14 @@ configuration with the [mergekit-moe](https://github.com/arcee-ai/mergekit/blob/
 command and the `--clone-tensors` option (see
 [details](https://github.com/arcee-ai/mergekit/blob/main/docs/moe.md#what-does-the-your-model-has-duplicated-tensors-but-the---clone-tensors-flag-is-not-set-warning-mean)).
 
+TODO:
+
+- training config
+- training curves
+- evaluation
+- results
+- conclusion
+
 ### Individual Merging and MoE Training
 
 In this experiment we follow a 5 step approach:
