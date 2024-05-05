@@ -46,7 +46,12 @@ In this experiment we follow a 5 step approach:
 
 #### SFT Training of 4 different Phi-3 Models
 
-TODO
+| Model Name    | Training Data | Axolotl Config |
+| -------- | ------- | ------- |
+| [PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-UltraChat](https://huggingface.co/PhilipMay/Phi-3-mini-4k-instruct-LLaMAfied-UltraChat)  | [PhilipMay/UltraChat-200k-ShareGPT-clean](https://huggingface.co/datasets/PhilipMay/UltraChat-200k-ShareGPT-clean) | [phi3_01.yml](https://github.com/PhilipMay/llm_training/blob/main/phi_3_training/phi3_01.yml) |
+| []() | []() | []() |
+| []() | []() | []() |
+| []() | []() | []() |
 
 #### Merging the 4 Phi-3 Models
 
