@@ -1,0 +1,22 @@
+base_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+gate_mode: random # one of "hidden", "cheap_embed", or "random"
+dtype: bfloat16 # output dtype (float32, float16, or bfloat16)
+## (optional)
+# experts_per_token: 2
+experts:
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
+  - source_model: vonjack/Phi-3-mini-4k-instruct-LLaMAfied
+    positive_prompts: []
