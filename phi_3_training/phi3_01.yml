@@ -25,7 +25,7 @@ datasets:
 
 # saving
 dataset_prepared_path: ./persist/dataset_prepared_path
-output_dir: ./persist/phi3_ori_01_01
+output_dir: ./persist/phi3_ori_01_02
 saves_per_epoch: 20
 save_total_limit: 2
 auto_resume_from_checkpoints: true
@@ -55,7 +55,12 @@ gradient_checkpointing_kwargs:
 flash_attention: false
 warmup_steps: 500
 max_grad_norm: 1.0
-sdp_attention: true
+# ValueError: Phi3ForCausalLM does not support an attention implementation through torch.nn.functional.scaled_dot_product_attention yet.
+# Please request the support for this architecture: https://github.com/huggingface/transformers/issues/28005.
+# If you believe this error is a bug, please open an issue in Transformers GitHub repository and
+# load your model with the argument `attn_implementation="eager"` meanwhile.
+# Example: `model = AutoModel.from_pretrained("openai/whisper-tiny", attn_implementation="eager")`
+# sdp_attention: true
 
 # evaluation & logging
 evals_per_epoch: 30
@@ -66,4 +71,4 @@ logging_steps: 1
 
 # wabdb config
 wandb_project: tiny
-wandb_name: phi3_ori_01_01
+wandb_name: phi3_ori_01_02
